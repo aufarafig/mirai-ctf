@@ -51,7 +51,17 @@ export default function Home() {
       </div>
       <div className="w-full h-screen lg:rotate-3 lg:w-[53%] lg:mt-4">
         <Phone>
+          <h1 className="absolute right-0 mr-8 top-15 text-6xl lg:text-[8rem] font-extrabold tracking-tighter text-transparent [-webkit-text-stroke:1.5px_rgba(0,0,0,0.15)]">MIRAI</h1>
           <div className="mt-15 lg:mb-15 flex flex-col gap-4">
+            <div className="flex gap-2">
+              <Image
+                src="/icons/signal_animation.gif"
+                alt="signal animation"
+                width={30}
+                height={30}
+              />
+              <h3 className="font-bold text-xl">HOMEPAGE</h3>
+            </div>
              {menuData.map((item) => (
                 <MenuNavigationCard
                   key={item.id}
