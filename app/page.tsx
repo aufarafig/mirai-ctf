@@ -127,10 +127,10 @@ export default function Home() {
               
               {/* Menu 1: Courses */}
               <Link href="/courses" className="relative flex h-32 flex-col justify-between overflow-hidden rounded-2xl bg-[#EAEAF1] p-3 shadow-lg transition-transform hover:scale-[1.02] group sm:h-36 sm:p-4">
-                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-500 ease-out group-hover:scale-[70]" />
-                <span className="relative z-10 w-max rounded-sm bg-[#332b6e] px-2 py-1 text-xs font-bold text-white">COURSES</span>
+                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-1000 ease-out group-hover:scale-[70]" />
+                <span className="relative z-10 w-max bg-[#41405f] px-2.5 py-1 text-lg font-bold text-white sm:text-xl">COURSES</span>
                 <div className="relative z-10 flex items-end justify-end">
-                  <span className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 whitespace-nowrap text-4xl font-extrabold tracking-tight text-transparent transition-colors [-webkit-text-stroke:1px_white]">COURSES</span>
+                  <span className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 whitespace-nowrap text-5xl font-extrabold tracking-tight text-transparent transition-colors [-webkit-text-stroke:1px_white]">COURSES</span>
                   <Image 
                     src="/icons/courses_purple_icon.png"
                     alt=""
@@ -143,8 +143,8 @@ export default function Home() {
 
               {/* Menu 2: Challenges */}
               <Link href="/challenges" className="relative flex h-32 flex-col justify-between overflow-hidden rounded-2xl bg-[#EAEAF1] p-3 shadow-lg transition-transform hover:scale-[1.02] group sm:h-36 sm:p-4">
-                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-500 ease-out group-hover:scale-[70]" />
-                <span className="relative z-10 w-max rounded-sm bg-[#332b6e] px-2 py-1 text-xs font-bold text-white">CHALLENGES</span>
+                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-1000 ease-out group-hover:scale-[70]" />
+                <span className="relative z-10 w-max bg-[#41405f] px-2.5 py-1 text-lg font-bold text-white sm:text-xl">CHALLENGES</span>
                 <div className="relative z-10 flex items-end justify-end">
                   <span className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 whitespace-nowrap text-4xl font-extrabold tracking-tight text-transparent transition-colors [-webkit-text-stroke:1px_white]">CHALLENGES</span>
                   <Image 
@@ -152,15 +152,15 @@ export default function Home() {
                     alt=""
                     width={72}
                     height={64}
-                    className="relative z-10 shrink-0 transition-[filter] duration-300 group-hover:brightness-0 group-hover:invert"
+                    className="relative z-10 shrink-0 transition-[filter] duration-900 group-hover:brightness-0 group-hover:invert"
                   />
                 </div>
               </Link>
 
               {/* Menu 3: Scoreboard */}
               <Link href="/scoreboard" className="relative flex h-32 flex-col justify-between overflow-hidden rounded-2xl bg-[#EAEAF1] p-3 shadow-lg transition-transform hover:scale-[1.02] group sm:h-36 sm:p-4">
-                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-500 ease-out group-hover:scale-[70]" />
-                <span className="relative z-10 w-max rounded-sm bg-[#332b6e] px-2 py-1 text-xs font-bold text-white">SCOREBOARD</span>
+                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#3C367A] transition-transform duration-1000 ease-out group-hover:scale-[70]" />
+                <span className="relative z-10 w-max bg-[#41405f] px-2.5 py-1 text-lg font-bold text-white sm:text-xl">SCOREBOARD</span>
                 <div className="relative z-10 flex items-end justify-end">
                   <span className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 whitespace-nowrap text-4xl font-extrabold tracking-tight text-transparent [-webkit-text-stroke:1px_white]">SCOREBOARD</span>
                   <Image 
@@ -175,8 +175,8 @@ export default function Home() {
 
               {/* Menu 4: Home */}
               <Link href="/" onClick={() => setIsMenuOpen(false)} className="relative flex h-32 flex-col justify-between overflow-hidden rounded-2xl bg-[#EAEAF1] p-3 shadow-lg transition-transform hover:scale-[1.02] group sm:h-36 sm:p-4">
-                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#52527C] transition-transform duration-500 ease-out group-hover:scale-[70]" />
-                <span className="relative z-10 w-max rounded-sm bg-[#332b6e] px-2 py-1 text-xs font-bold text-white">HOME</span>
+                <span className="absolute bottom-0 left-0 z-0 size-4 -translate-x-1/2 translate-y-1/2 scale-0 rounded-full bg-[#52527C] transition-transform duration-1000 ease-out group-hover:scale-[70]" />
+                <span className="relative z-10 w-max bg-[#41405f] px-2.5 py-1 text-lg font-bold text-white sm:text-xl">HOME</span>
                 <div className="relative z-10 flex items-end justify-end">
                   <span className="pointer-events-none absolute bottom-0 left-0 right-0 z-0 whitespace-nowrap text-5xl font-extrabold tracking-tight text-transparent [-webkit-text-stroke:1px_white]">HOME</span>
                   <Image 
