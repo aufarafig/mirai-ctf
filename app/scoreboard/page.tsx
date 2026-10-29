@@ -20,7 +20,7 @@ const rankIcons: Record<number, string> = {
 
 export default function ScoreboardPage() {
   return (
-    <main className="relative min-h-screen overflow-hidden px-4 pb-8 pt-28 text-[#41405f] sm:px-8 sm:pt-32">
+    <main className="relative h-screen overflow-hidden px-4 pb-8 pt-28 text-[#41405f] sm:px-8 sm:pt-32">
       <Link
         href="/"
         aria-label="Back to home"
@@ -90,8 +90,6 @@ export default function ScoreboardPage() {
           ))}
         </ol>
       </section>
-
-      
     </main>
   );
 }

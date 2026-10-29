@@ -5,6 +5,7 @@ import Image from "next/image";
 import NavigationBar from "./components/BurgerNavigation";
 import Phone from "./components/phone";
 import MenuNavigationCard, { CardProps } from "./components/MenuNavigationCard";
+import Link from "next/link";
 
 export default function Home() {
   const menuData: CardProps[] = [
@@ -78,6 +79,37 @@ export default function Home() {
                   href={item.href}
                 />
              ))}
+             <div className="flex flex-row w-full gap-2 h-[13vh]">
+              <Link href="/info"
+                className="flex items-center gap-3 px-4 w-full h-full bg-[#D6D6E4] border-2 border-[#47476A] rounded-xl transition-transform ease-in-out duration-300 hover:scale-[1.02]"
+              >
+              <Image
+                src="/icons/rules-icon.svg"
+                alt="user icon"
+                width={50}
+                height={30}
+              />
+
+              <div>
+                <h2 className="text-[#47476A] font-bold text-xl">RULES & INFO</h2>
+                <p className="text-[#7E7E9A] font-semibold text-sm">ATURAN & INFO</p>
+              </div>
+              </Link>
+              <Link href="/Auth/login"
+                className="flex gap-2 items-center px-4 w-full h-full bg-[#D6D6E4] border-2 border-[#47476A] rounded-xl transition-transform ease-in-out duration-300 hover:scale-[1.02]"
+              >
+              <Image
+                src="/icons/setting-icon.svg"
+                alt="user icon"
+                width={50}
+                height={30}
+              />
+              <div>
+                <h2 className="text-[#47476A] font-bold text-xl">USER SETTING</h2>
+                <p className="text-[#7E7E9A] font-semibold text-sm">PENGATURAN PENGGUNA</p>
+              </div>
+              </Link>
+             </div>
           </div>
         </Phone>
       </div>

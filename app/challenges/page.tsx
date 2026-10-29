@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useMemo, useState } from "react";
 import BurgerNavigation from "../components/BurgerNavigation";
 import Phone from "../components/phone";
+import AiChat from "../components/AiChat";
 
 const challenges = [
   {
@@ -103,7 +104,7 @@ export default function ChallengesPage() {
     challenges[0];
 
   return (
-    <main className="relative flex h-screen min-h-[620px] w-full flex-col overflow-y-auto text-white lg:flex-row lg:overflow-hidden">
+    <main className="relative flex h-screen min-h-155 w-full flex-col overflow-y-auto text-white lg:flex-row lg:overflow-hidden">
       <Link
         href="/"
         aria-label="Back to home"
@@ -116,6 +117,7 @@ export default function ChallengesPage() {
           height={30}
         />
       </Link>
+
 
       <BurgerNavigation />
 
@@ -310,7 +312,9 @@ export default function ChallengesPage() {
             </article>
           </Phone>
         </div>
+
       </section>
+      <AiChat/>
     </main>
   );
 }
